@@ -1,2 +1,2 @@
 # servlet-crud-api
-## Servlet CRUD APIs
+## Servlet CRUD API
