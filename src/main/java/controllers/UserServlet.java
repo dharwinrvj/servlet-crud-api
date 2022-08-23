@@ -31,7 +31,6 @@ public class UserServlet extends HttpServlet {
             String userEmail = jsonUserObject.getString("email");
             String userCountry = jsonUserObject.getString("country");
             User user = new User(userName, userEmail, userCountry);
-            System.out.println();
             if (userDAO.insert(user) == 1) {
                 JSONObject jsonResponse = new JSONObject();
                 jsonResponse.put("code", 0);
