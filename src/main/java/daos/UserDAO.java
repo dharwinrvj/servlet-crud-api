@@ -12,9 +12,9 @@ public class UserDAO {
     private static final String SELECT_USER_BY_ID = "select id,name,email,country from users where id=?;";
     private static final String DELETE_USERS_SQL = "delete from users where id=?;";
     private static final String UPDATE_USERS_SQL = "update users set name=?,email=?,country=? where id=?;";
-    private final String jdbcDriver = "com.mysql.cj.jdbc.Driver";
-    private final String jdbcURL = "jdbc:mysql://localhost:3306/servletcrud?useSSL=false";
-    private final String jdbcUsername = "root";
+    private final String jdbcDriver = "org.postgresql.Driver";
+    private final String jdbcURL = "jdbc:postgresql://localhost:5432/servletcrud?useSSL=false";
+    private final String jdbcUsername = "postgres";
     private final String jdbcPassword = "D123@localhost";
 
     protected Connection getConnection() {

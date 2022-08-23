@@ -15,5 +15,6 @@
     <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.11.4" level="project" />
     <orderEntry type="library" name="javax.servlet-api-4.0.1" level="project" />
     <orderEntry type="library" name="json-20220320" level="project" />
+    <orderEntry type="library" name="postgresql-42.4.2" level="project" />
   </component>
 </module>
