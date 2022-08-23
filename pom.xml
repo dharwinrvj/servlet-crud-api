@@ -20,6 +20,20 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.28</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.json/json -->
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20220320</version>
+    </dependency>
+
   </dependencies>
   <build>
     <finalName>servlet-crud-api</finalName>
