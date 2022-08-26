@@ -3,6 +3,22 @@
         "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
+    <filter>
+        <filter-name>Filter1</filter-name>
+        <filter-class>filters.Filter1</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Filter1</filter-name>
+        <url-pattern>/users/*</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>Filter2</filter-name>
+        <filter-class>filters.Filter2</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Filter2</filter-name>
+        <url-pattern>/users/*</url-pattern>
+    </filter-mapping>
     <servlet>
         <servlet-name>UserServlet</servlet-name>
         <servlet-class>controllers.UserServlet</servlet-class>
