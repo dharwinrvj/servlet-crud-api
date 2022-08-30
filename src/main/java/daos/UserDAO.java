@@ -30,7 +30,7 @@ public class UserDAO {
         return connection;
     }
 
-    public int insert(User user) throws SQLException {
+    public int insert(User user) {
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
             preparedStatement.setString(1, user.getName());
@@ -80,7 +80,7 @@ public class UserDAO {
         return user;
     }
 
-    public boolean update(User user) throws SQLException {
+    public boolean update(User user) {
         boolean rowUpdated = false;
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_USERS_SQL)) {
@@ -95,7 +95,7 @@ public class UserDAO {
         return rowUpdated;
     }
 
-    public boolean delete(int id) throws SQLException {
+    public boolean delete(int id) {
         boolean rowDeleted = false;
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(DELETE_USERS_SQL)) {
