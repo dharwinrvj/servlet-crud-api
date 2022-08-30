@@ -36,7 +36,7 @@ public class UserDAO {
             preparedStatement.setString(1, user.getName());
             preparedStatement.setString(2, user.getEmail());
             preparedStatement.setString(3, user.getCountry());
-           return preparedStatement.executeUpdate();
+            return preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }

@@ -43,7 +43,7 @@ public class UserServlet extends HttpServlet {
         } catch (SQLException e) {
             this.printSQLException(e);
         }
-          }
+    }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String userIdURI = request.getPathInfo();
