@@ -2,7 +2,7 @@ package beans;
 
 public class User {
     private int id;
-    private String name, email, country ;
+    private String name, email, country;
 
     public User(int id, String name, String email, String country) {
         this.id = id;
